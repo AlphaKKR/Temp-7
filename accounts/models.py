@@ -43,6 +43,7 @@ class UserAccount(AbstractBaseUser):
     first_name      = models.CharField(default='', max_length=30)
     last_name       = models.CharField(default='', max_length=30)
     timetable       = models.TextField(default='', max_length=10000, null=True)
+    club_verification = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
