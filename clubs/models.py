@@ -8,5 +8,4 @@ class ClubAccount(models.Model):
     ig_id           = models.CharField(null=True, max_length=1000)
     club_email      = models.EmailField(null=True)
 
-    verified        = models.BooleanField(default=False)
 
