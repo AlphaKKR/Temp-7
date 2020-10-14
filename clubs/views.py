@@ -32,6 +32,6 @@ def Logout(request):
     logout(request)
     return redirect('/login')
 
-
-
-            
+def post_event(request):
+    if request == 'POST':
+        pass
